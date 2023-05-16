@@ -1,4 +1,4 @@
-//package Point_and_Click;
+package EscapeRoom_Iteration1;//package Point_and_Click;
 
 public class GameManager {
     ActionHandler aHandler = new ActionHandler(this);

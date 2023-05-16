@@ -1,4 +1,6 @@
-//package Point_and_Click;
+package EscapeRoom_Iteration1;//package Point_and_Click;
+import EscapeRoom_Iteration1.GameManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Cursor;
@@ -11,7 +13,7 @@ public class UI {
     public JTextArea messageText;
     public JPanel bgPanel[] = new JPanel[10];
     public JLabel bgLabel[] = new JLabel[10];
-
+    public JButton b;
     public UI(GameManager gm) {
         this.gm = gm;
         createMainField();
@@ -39,6 +41,13 @@ public class UI {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.getContentPane().setBackground(Color.BLACK);
         window.setLayout(null);
+
+        b = new JButton();
+        b.setLocation(0,0);
+        b.setSize(50, 50);
+        b.addActionListener(e -> {
+
+        });
 
 
     }
@@ -161,7 +170,6 @@ public class UI {
         createBackground(3,"LightRoom.jpg");
         createObject(3, 440, 40, 120, 320, "Lantern.png", "On","Off","on", "off"); // Lantern
         createObject(3, 200, 200, 200, 200, "OpenChest1.jpg", "Open","Close","open", "close"); // Lantern
-
     }
 }
 //lets go home after this class ends

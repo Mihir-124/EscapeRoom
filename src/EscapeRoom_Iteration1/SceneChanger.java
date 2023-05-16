@@ -1,3 +1,7 @@
+package EscapeRoom_Iteration1;
+
+import EscapeRoom_Iteration1.GameManager;
+
 public class SceneChanger
 {
     GameManager gm;

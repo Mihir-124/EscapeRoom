@@ -1,3 +1,5 @@
+package EscapeRoom_Iteration1;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -30,8 +32,10 @@ public class ActionHandler implements ActionListener
         }
         else if(yourChoice == "open")
         {
-            gm.ui.messageText.setText("Chest is open");
-            gm.sChanger.openChest();
+            if(gm.ui.bgPanel[2].isVisible()) {
+                gm.ui.messageText.setText("Chest is open");
+                gm.sChanger.openChest();
+            }
         }
         else if(yourChoice == "close")
         {
